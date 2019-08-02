@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <span>Tip Calculator</span>
+  </div>
+  <div class="calc-flex">
+    <div class="flex-50">
+      <label>Tip</label>
+      <span id="server-tip">£0</span>
+    </div>
+    <div class="flex-50">
+      <label>Total</label>
+      <span id="total">£0</span>
+    </div>
+  </div>
+  <div class="content-flex">
+    <div class="flex-100">
+      <label for="">Bill</label>
+      <input type="number" id="user-bill" value="0" required>
+    </div>
+  </div>
+  <div class="content-flex">
+    <div class="flex-100">
+      <label for="">Split</label>
+      <input type="number" id="user-split" value="1" required>
+    </div>
+  </div>
+  <div class="content-flex">
+    <div class="flex-100 item-0">
+      <label for="">Percent</label>
+      <input class="w3-input" type="range" min="0" max="50" step="5" id="percentage" oninput="sum();">
+      <div id="slider-val" class="w3-center">0%</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
